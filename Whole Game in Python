@@ -1,0 +1,207 @@
+def input_name(name):
+    return name
+
+name = input("What is your name Adventurer? ")
+name = input_name(name)
+print("Welcome to your adventure, " +  str(name))
+
+def input_adventure(adventure):
+    return adventure
+
+adventure = input("I forgot what we are looking for, can you tell me? ")
+adventure = input_adventure(adventure)
+print("We are looking for " +  str(adventure))
+
+def ask_question1(question1):
+    return question1
+
+print ("You come across a cave. You think there might see  " + str(adventure))
+question1 = input("Should we go in? y / n:")
+while question1 == "n":
+  print("Oh no! A thief is coming to kill you. You try to run, but he catches up  and kills you. ")
+  print("Game over!")
+  exit()
+if question1 == 'y':  
+      print("There it is!" + str(adventure) + " is right there!")
+
+def ask_question2(question2):
+    return question2
+
+print ("But oh no! It was a trap! There is a boilder coming towards you! Do you run out of the cave Answer N or do you stay in the cave Answer Y?")
+
+question2 = input("do you stay or leave y / n:")
+while question2 == "n":
+  print("You walk out knowing you will never get " + str(adventure))
+  print("Game over! ")
+  exit()
+
+if question2 == 'y':  
+      print("The boilder was made of foam! You see the thing we are looking for! Its right there!")
+
+def ask_question3(question3):
+    return question3
+
+print ("Do you walk to get it? Answer Y to walk to it or Answer N to walk out and leave")
+
+question3 = input("do you stay or leave y / n:")
+while question3 == "y":
+  print("You walk to it. It is fake! You lose!")
+  exit()
+
+if question3 == 'n':  
+      print("You walk out and see a lab, maybe a " + str(adventure) + " is in it?" )
+def ask_question4(question4):
+    return question4
+
+print ("Would you like to go into the lab? Answer Y if yes answer N if no.")
+
+question4 = input("Do you go in or leave y / n:")
+while question4 == "n":
+  print("You walk away and wander for many more years but never find what you were looking for. Maybe you should have cheeked the lab?")
+  exit()
+if question4 == 'y':  
+      print("You walk to itand go inside. It looks abandoned. There is a math eqution on the chalk borad that says 3x + 5 = 14 Which means X=3!, maybe we should remember that!")
+def ask_question5(question5):
+    return question5
+
+print ("You see a lake, you have not had water for days. Maybe you should stop and set up camp for the night. You can also do some hunting before night. Answer N to not set up camp and answer Y to set up camp.")
+
+question5 = input("Do you go to the lake and set up camp or leave y / n:")
+while question5 == "n":
+  print("You really were thirsty and hungry. You die of startvation.")
+  exit()
+if question5 == 'y':  
+      print("You set up camp and hunt. +10 food and +10 bottles of water.")
+def ask_question6(question6):
+    return question6
+
+print ("You wake up and see a theif rummaging through your stuff. You decide to either get up and attack him (Answer N) or pretend you are still asleep and hope he leaves(Answer Y)")
+
+question6 = input("Do you stop him? y / n:")
+while question6 == "n":
+  print("You get up to attack him but he was prepard for this and kills you. Game over.")
+  exit()
+if question6 == 'y':  
+      print("You lost 5 food and 5 water. -5 Food -5 water.")
+def ask_question7(question7):
+    return question7
+
+print ("You continute on your adventure and come across a town (Or a society) you go in and see a salad on the groud. If you would like to pick it up Answer Y or leave it there Answer N")
+
+question7 = input("Do you take the salad? y / n:")
+while question7 == "y":
+  print("Come on. You know better than that. Don't eat food off the ground. It was poisoned and you died.")
+  exit()
+if question7 == 'n':  
+      print("Good choice.")
+def ask_question8(question8):
+    return question8
+
+print ("You see a shack called YE OLD STOCK SHACK and go in. You think that it might be good to trade in all your food and water for stock in a sword makeing black smith hopeing to make more food and water. Answer Y to invest all your food and water in to it or Answer N to not")
+
+question8 = input("Do you invest in the stock? y / n:")
+while question8 == "y":
+  print("Just as you finish signing papers to invest you walk out of YE OLD STOCK SHACK and find out the black smith burned his hands off. You die beacuse of not having food or water.")
+  exit()
+if question8 == 'n':  
+      print("Good choice, you find out after leaveing YE OLD STOCK SHACK that the blacksmiths hands were burned off. You smile knowing you made the right choice.")
+def ask_question9(question9):
+    return question9
+
+print ("You see a worker, maybe he has" + str(adventure) + "? You ask him if he has seen it. He has a extraversion personality. He says he thinks he saw one out west")
+
+question9 = input("Do you head west? y / n:")
+while question9 == "n":
+  print("You decided to settle down in the village and never found what you were looking. Game Over.")
+  exit()
+if question9 == 'y':  
+      print("You start your journey west with 4 food and 4 water. This gives you 4 days before you run out.")
+def ask_question10(question10):
+    return question10
+
+print ("You find a river with a broken bridge")
+
+question10 = input("Do you set up camp here and do some hunting a collect water? y / n:")
+while question10 == "n":
+  print("You get eaten by wolfs in the night beacuse you have no protection.")
+  exit()
+if question10 == 'y':  
+      print("You get +6 food and +6 water and then hit the ye old sack. You now have 10 food and 10 water")
+def ask_question11(question11):
+    return question11
+
+print ("You wake up the next morning needing to get to the other side of the river. You think of two ways to get ")
+
+question11 = input("Do you try to swim across the river (Answer Y) or  find wood to fix the bridge (Answer N) y / n:")
+while question11 == "y":
+  print("You try to swim across but are attacked by Piranhas. Game over.")
+  exit()
+if question11 == 'n':  
+      print("You see a forest and decide and a damaged axe and decide to cut down some wood to fix the bridge.")
+def ask_question12(question12):
+    return question12
+
+print ("You go to the forest and go in. You also see a small shack in the distence. Maybe it has wood or"+ str(adventure) + "?")
+
+question12 = input("Do you go to the shack (Answer N) or cut down your own wood (Answer Y) y / n:")
+while question12 == "n":
+  print("You knock on the door of the shack and it flys open. There are broken potions everywhere. You relize this is a witches shack! The witch gives you immortality then makes you here text subject for the rest of your life. Game Over.")
+  exit()
+if question12 == 'y':  
+      print("You chop down wood then start to head back to your camp.")
+def ask_question13(question13):
+    return question13
+
+print ("You start to leave when you hear a soft voice calling your name. You look to where the sound is coming from and there is a cave with a purple glow coming out of it...")
+
+question13 = input("Do you go to the cave (Answer N) or go back to fix the bridge (Answer Y) y / n:")
+while question13 == "n":
+  print("You go in the cave but then rocks fall down on the entrence! You are traped! Then a big rat comes and eats you. Game Over!")
+  exit()
+if question13 == 'y':  
+      print("You go back to fix the bridge, now you can cross it!")
+def ask_question14(question14):
+    return question14
+
+print ("You cross the bridge and see another cave. Then you hear a loud noise, it sounds like this, OOOOOOIINNNNKKKKKKKKKKK!!! You look back at the cave and see a 24 foot tall hog! And the hog has a"+  str(adventure))
+
+question14 = input("Do you make weapons to kill the hog (Answer N) or do you wait til night then sneak up and steal the thing you are looking for (Answer Y) y / n:")
+while question14 == "y":
+  print("The hog never sleeps! When you try to sneak up to it, it kills you with hot bacon grease. Kill by bacon. Thats quite the story. Well, you can't tell it beacuse its Game Over.")
+  exit()
+if question14 == 'n':  
+      print("You go back to your camp and start makeing wepons out of wood. +1 bow +1 sword +1 shield +5 arrows")
+def ask_question15(question15):
+    return question15
+
+print ("You cross the bridge. The final fight has begon. The Hog is 5 feet away")
+
+question15 = input("Do you hit it with your sword (Answer Y) or shoot it with an arrow (Answer N) y / n:")
+while question15 == "n":
+  print("The hog never sleeps! When you try to sneak up to it, it kills you with hot bacon grease. Kill by bacon. Thats quite the story. Well, you can't tell it beacuse its Game Over.")
+  exit()
+if question15 == 'y':  
+      print("You hit it with your sword. The hog has 5/10 hp left.")
+def ask_question16(question16):
+    return question16
+
+print ("The hogs eyes start to glow red. A red lazer beam starts to come out of his eyes.")
+
+question16 = input("Do you try to block it with your wooden shield (Answer Y) or run in a zig zag and dodge the shot (Answer N) y / n:")
+while question16 == "y":
+  print("Your wooden shield burns and the lazer hits you. Game Over")
+  exit()
+if question16 == 'n':  
+      print("You successfully dodge the beam")
+def ask_question17(question17):
+    return question17
+
+print ("The hog is 15 feet away")
+
+question17 = input("Do you use your sword (Answer Y) or use your bow (Answer N) y / n:")
+while question17 == "y":
+  print("The hog is to far away to hit. The hog attacks you and takes away all your hp.")
+  exit()
+if question17 == 'n':  
+      print("YOU DID IT! YOU KILLED THE HOG! AND HE HAD THE THING WE ARE LOOKING FOR!")
+print("Credits: All of game by FosterFD studios")
